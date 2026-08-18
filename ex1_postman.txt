@@ -1,0 +1,106 @@
+BASE URL: https://api.restful-api.dev/objects/
+
+1. 13
+
+2. {
+    "id": "10",
+    "name": "Apple iPad Mini 5th Gen",
+    "data": {
+        "Capacity": "64 GB",
+        "Screen size": 7.9
+    }
+}
+
+So the name is Apple iPad Mini 5th Gen
+
+3. 
+    {
+        "id": "1",
+        "name": "Google Pixel 6 Pro",
+        "data": {
+            "color": "Cloudy White",
+            "capacity": "128 GB"
+        }
+    },
+    {
+        "id": "2",
+        "name": "Apple iPhone 12 Mini, 256GB, Blue",
+        "data": null
+    },
+    {
+        "id": "4",
+        "name": "Apple iPhone 11, 64GB",
+        "data": {
+            "price": 389.99,
+            "color": "Purple"
+        }
+    }
+]
+
+4. I got this response:
+
+{
+    "id": "ff8081819ff5b11001a0146c20c941a8",
+    "name": "Bibi Shania Tinkouree",
+    "createdAt": 1787049025738,
+    "data": null
+} 
+
+So the id is ff8081819ff5b11001a0146c20c941a8
+
+5. This is the response that I got:
+
+{
+    "id": "ff8081819ff5b11001a0146c20c941a8",
+    "name": "Bibi Shania Tinkouree",
+    "data": null
+}
+
+6. This is the response I got while patching:
+
+{
+    "id": "ff8081819ff5b11001a0146c20c941a8",
+    "name": "Shania",
+    "updatedAt": 1787049292707,
+    "data": null
+}
+
+And this is the reponse I got when getting:
+
+{
+    "id": "ff8081819ff5b11001a0146c20c941a8",
+    "name": "Shania",
+    "data": null
+}
+
+7. This is what I got while putting: 
+
+{
+    "id": "ff8081819ff5b11001a0146c20c941a8",
+    "name": "Shaniaaa",
+    "updatedAt": 1787049416615,
+    "data": null
+}
+
+And this is what I got using GET:
+
+{
+    "id": "ff8081819ff5b11001a0146c20c941a8",
+    "name": "Shaniaaa",
+    "data": null
+}
+
+8. This is what I got when using DELETE:
+
+Status code: 200 OK ==> It means that the object with id ff8081819ff5b11001a0146c20c941a8 has been successfully deleted. 
+
+{
+    "message": "Object with id = ff8081819ff5b11001a0146c20c941a8 has been deleted."
+}
+
+This is what I got when using GET:
+Status code: 404 Not Found
+
+{
+    "error": "Object with id=ff8081819ff5b11001a0146c20c941a8 was not found."
+}
